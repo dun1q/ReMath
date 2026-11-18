@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReMath — Главная</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="images/logo.svg" alt="ReMath" width="160" height="40">
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Темы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="profile.html">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__user user" href="profile.html">
+        <span class="user__name">Анна Бородина</span>
+        <span class="user__avatar" aria-hidden="true">АБ</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <div class="page-head">
+        <div class="page-head__text">
+          <h1 class="page-head__title">Что стоит повторить сегодня?</h1>
+          <p class="page-head__subtitle">Статистическое и динамическое моделирование · повторение после завершения курса</p>
+        </div>
+        <time class="page-head__date" datetime="2026-11-04">4 ноября 2026</time>
+      </div>
+
+      <div class="page-body">
+        <div class="page-body__main">
+          <section class="card recommendation">
+            <div class="recommendation__top">
+              <span class="badge">Рекомендуем проверить сегодня</span>
+              <span class="recommendation__meta">4 задания · около 6 минут</span>
+            </div>
+
+            <h2 class="recommendation__title">Линейная регрессия</h2>
+
+            <div class="recommendation__stats">
+              <span class="recommendation__stat">Последняя проверка: 76%</span>
+              <span class="recommendation__stat recommendation__stat--muted">Выбранный порог: 70%</span>
+            </div>
+
+            <div class="recommendation__body">
+              <p class="recommendation__lead">Результат ещё выше порога. Но знания стоит освежить.</p>
+              <p class="recommendation__text">
+                На проверке 28 октября ваш результат составил 76%. Модель прогнозирует снижение
+                до 71% на 4 ноября и может приблизиться к порогу 70% к 6 ноября. Пройдите
+                короткую проверку, чтобы уточнить состояние знаний.
+              </p>
+
+              <div class="recommendation__actions">
+                <a class="button" href="check.html">
+                  Начать проверку
+                  <img src="images/next.svg" alt="" width="16" height="16">
+                </a>
+                <span class="recommendation__hint">Начните проверку, когда будете готовы</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="card topics">
+            <div class="topics__head">
+              <h2 class="topics__title">Ваши темы</h2>
+              <span class="topics__meta">4 темы · выбранный порог: 70%</span>
+            </div>
+
+            <ul class="topics__list">
+              <li>
+                <a class="topic" href="#">
+                  <span class="topic__icon">
+                    <img src="images/tema1.svg" alt="" width="30" height="30">
+                  </span>
+                  <span class="topic__info">
+                    <span class="topic__name">Линейная регрессия</span>
+                    <span class="topic__meta">Последняя проверка · 28 октября · 76%</span>
+                  </span>
+                  <span class="topic__next">
+                    <span class="topic__label">Следующая проверка</span>
+                    <span class="topic__date topic__date--today">Сегодня</span>
+                  </span>
+                  <img class="topic__arrow" src="images/chevron-right.svg" alt="" width="16" height="16">
+                </a>
+              </li>
+
+              <li>
+                <a class="topic" href="#">
+                  <span class="topic__icon">
+                    <img src="images/tema2.svg" alt="" width="30" height="30">
+                  </span>
+                  <span class="topic__info">
+                    <span class="topic__name">Марковские цепи</span>
+                    <span class="topic__meta">Последняя проверка · 30 октября · 82%</span>
+                  </span>
+                  <span class="topic__next">
+                    <span class="topic__label">Следующая проверка</span>
+                    <span class="topic__date">12 ноября</span>
+                  </span>
+                  <img class="topic__arrow" src="images/chevron-right.svg" alt="" width="16" height="16">
+                </a>
+              </li>
+
+              <li>
+                <a class="topic" href="#">
+                  <span class="topic__icon">
+                    <img src="images/tema3.svg" alt="" width="30" height="30">
+                  </span>
+                  <span class="topic__info">
+                    <span class="topic__name">Модели роста</span>
+                    <span class="topic__meta">Последняя проверка · 1 ноября · 80%</span>
+                  </span>
+                  <span class="topic__next">
+                    <span class="topic__label">Следующая проверка</span>
+                    <span class="topic__date">14 ноября</span>
+                  </span>
+                  <img class="topic__arrow" src="images/chevron-right.svg" alt="" width="16" height="16">
+                </a>
+              </li>
+
+              <li>
+                <a class="topic" href="#">
+                  <span class="topic__icon">
+                    <img src="images/tema4.svg" alt="" width="30" height="30">
+                  </span>
+                  <span class="topic__info">
+                    <span class="topic__name">Метод Монте-Карло</span>
+                    <span class="topic__meta">Последняя проверка · 2 ноября · 85%</span>
+                  </span>
+                  <span class="topic__next">
+                    <span class="topic__label">Следующая проверка</span>
+                    <span class="topic__date">18 ноября</span>
+                  </span>
+                  <img class="topic__arrow" src="images/chevron-right.svg" alt="" width="16" height="16">
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <aside class="card agent">
+          <p class="agent__placeholder">Скоро появимся)))</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

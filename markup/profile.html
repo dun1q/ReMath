@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReMath — Личный кабинет</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="images/logo.svg" alt="ReMath" width="160" height="40">
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Темы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="profile.html" aria-current="page">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__user user" href="profile.html">
+        <span class="user__name">Анна Бородина</span>
+        <span class="user__avatar" aria-hidden="true">АБ</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <div class="page-head">
+        <div class="page-head__text">
+          <h1 class="page-head__title">Личный кабинет</h1>
+          <p class="page-head__subtitle">Результаты проверок, прогноз и рекомендации по повторению</p>
+        </div>
+      </div>
+
+      <div class="cabinet">
+        <aside class="cabinet__side">
+          <section class="card profile">
+            <span class="profile__avatar" aria-hidden="true">АБ</span>
+            <h2 class="profile__name">Анна Бородина</h2>
+            <p class="profile__role">Студент · 4 курс</p>
+
+            <div class="profile__disciplines">
+              <p class="profile__label">Ваши дисциплины</p>
+              <p class="profile__discipline">Статистическое и динамическое моделирование</p>
+              <span class="badge">Для повторения доступны 4 темы</span>
+            </div>
+          </section>
+
+          <section class="card threshold">
+            <h2 class="threshold__title">Выбранный порог</h2>
+            <form action="#">
+              <div class="threshold__field">
+                <input class="threshold__input" type="text" inputmode="numeric" value="70" aria-label="Порог в процентах">
+                <span class="threshold__unit">%</span>
+              </div>
+              <p class="threshold__hint">Порог используется для расчёта рекомендуемой даты повторения.</p>
+              <button class="button button--secondary" type="submit">Сохранить порог</button>
+            </form>
+          </section>
+
+          <div class="side-note">
+            <p class="side-note__title">Прогноз – не результат проверки</p>
+            <p class="side-note__text">
+              Модель оценивает возможное изменение освоения темы. Чтобы получить новый
+              фактический результат, пройдите проверку.
+            </p>
+          </div>
+        </aside>
+
+        <div class="cabinet__main">
+          <div class="toolbar">
+            <select class="select" aria-label="Тема">
+              <option>Линейная регрессия</option>
+              <option>Марковские цепи</option>
+              <option>Модели роста</option>
+              <option>Метод Монте-Карло</option>
+            </select>
+            <p class="toolbar__updated">
+              Обновлено <time datetime="2026-11-04">4 ноября 2026</time>
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="card stat">
+              <p class="stat__label">Последняя проверка</p>
+              <p class="stat__value">75%</p>
+              <p class="stat__note">4 ноября · верно 3 из 4</p>
+            </div>
+            <div class="card stat">
+              <p class="stat__label">Предыдущая проверка</p>
+              <p class="stat__value">76%</p>
+              <p class="stat__note">28 октября 2026</p>
+            </div>
+            <div class="card stat">
+              <p class="stat__label">Рекомендуемая проверка</p>
+              <p class="stat__value stat__value--accent">10 ноября</p>
+              <p class="stat__note">Дата рассчитана моделью</p>
+            </div>
+          </div>
+
+          <section class="card chart"></section>
+
+          <section class="card history">
+            <h2 class="history__title">История проверок</h2>
+            <table class="history__table">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Результат</th>
+                  <th>Выполненная сессия</th>
+                  <th>Следующее повторение</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4 ноября 2026</td>
+                  <td class="history__result">75%</td>
+                  <td class="history__session">Повторная проверка · верно 3 из 4</td>
+                  <td>10 ноября 2026</td>
+                </tr>
+                <tr>
+                  <td>28 октября 2026</td>
+                  <td class="history__result">76%</td>
+                  <td class="history__session">Повторная проверка</td>
+                  <td>4 ноября 2026</td>
+                </tr>
+                <tr>
+                  <td>21 октября 2026</td>
+                  <td class="history__result">82%</td>
+                  <td class="history__session">Первичная диагностика</td>
+                  <td>28 октября 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

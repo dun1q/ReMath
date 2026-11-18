@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReMath — Проверка знаний</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/check.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="images/logo.svg" alt="ReMath" width="160" height="40">
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Темы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="profile.html">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__user user" href="profile.html">
+        <span class="user__name">Анна Бородина</span>
+        <span class="user__avatar" aria-hidden="true">АБ</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <div class="page-head">
+        <div class="page-head__text">
+          <h1 class="page-head__title">Проверка знаний</h1>
+          <p class="page-head__subtitle">Линейная регрессия · 4 задания · около 6 минут</p>
+        </div>
+        <time class="page-head__date" datetime="2026-11-04">4 ноября 2026</time>
+      </div>
+
+      <div class="page-body">
+        <div class="page-body__main">
+          <section class="card task">
+            <div class="task__progress">
+              <div class="task__progress-top">
+                <span class="task__step">Задание 2 из 4</span>
+                <span class="task__done">Выполнено 1 из 4 заданий</span>
+              </div>
+              <div class="progress">
+                <span class="progress__item progress__item--done"></span>
+                <span class="progress__item progress__item--current"></span>
+                <span class="progress__item"></span>
+                <span class="progress__item"></span>
+              </div>
+            </div>
+
+            <div class="task__body">
+              <p class="task__category">Линейная регрессия · Расчёт прогноза</p>
+              <h2 class="task__title">Найдите прогнозируемый результат</h2>
+              <p class="task__text">
+                В регрессионной модели x – время подготовки в часах, а ŷ – прогнозируемый
+                результат теста в баллах. Найдите ŷ при x = 3.
+              </p>
+
+              <div class="task__formula">ŷ = 2,4 + 1,8x</div>
+
+              <form class="task__form" action="result.html">
+                <label class="task__label" for="answer">Ваш ответ</label>
+                <div class="task__field">
+                  <input class="task__input" id="answer" type="text" inputmode="decimal" placeholder="Введите число">
+                </div>
+                <div class="task__actions">
+                  <button class="button" type="submit">Проверить ответ</button>
+                  <span class="task__hint">Можно использовать запятую или точку</span>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <p class="task-note">
+            Ответ сохраняется после нажатия «Проверить ответ».<br>
+            Время выполнения не ограничено.
+          </p>
+        </div>
+
+        <aside class="card agent">
+          <p class="agent__placeholder">Скоро появимся)))</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

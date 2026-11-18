@@ -1,0 +1,141 @@
+.recommendation__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recommendation__meta {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.recommendation__title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.recommendation__stats {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.recommendation__stat--muted {
+  color: var(--color-muted);
+}
+
+.recommendation__body {
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+}
+
+.recommendation__lead {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.recommendation__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+.recommendation__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.recommendation__hint {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.topics {
+  padding: 0;
+  overflow: hidden;
+}
+
+.topics__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.topics__title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.topics__meta {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.topics__list li:not(:last-child) {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.topic {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 24px;
+}
+
+.topic:hover {
+  background-color: var(--color-bg);
+}
+
+.topic__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: var(--color-surface);
+}
+
+.topic__info,
+.topic__next {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.topic__name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.topic__meta {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.topic__label {
+  font-size: 10px;
+  color: var(--color-muted);
+}
+
+.topic__date {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.topic__date--today {
+  color: var(--color-accent);
+}
+
+.topic__arrow {
+  display: block;
+}

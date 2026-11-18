@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReMath — Проверка завершена</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/result.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="images/logo.svg" alt="ReMath" width="160" height="40">
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Темы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="profile.html">Личный кабинет</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__user user" href="profile.html">
+        <span class="user__name">Анна Бородина</span>
+        <span class="user__avatar" aria-hidden="true">АБ</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <div class="page-head">
+        <div class="page-head__text">
+          <h1 class="page-head__title">Проверка завершена</h1>
+          <p class="page-head__subtitle">Линейная регрессия · результаты сохранены</p>
+        </div>
+        <time class="page-head__date" datetime="2026-11-04">4 ноября 2026</time>
+      </div>
+
+      <div class="page-body">
+        <div class="page-body__main">
+          <section class="card result">
+            <div class="result__top">
+              <span class="badge">Проверка завершена</span>
+              <time class="result__date" datetime="2026-11-04">4 ноября 2026</time>
+            </div>
+
+            <h2 class="result__title">Линейная регрессия</h2>
+
+            <div class="result__score">
+              <p class="result__percent">75%</p>
+              <div class="result__summary">
+                <p class="result__summary-title">Верно выполнено 3 из 4 заданий</p>
+                <p class="result__summary-text">Результат этой проверки · выбранный порог: 70%</p>
+              </div>
+            </div>
+
+            <ul class="result__tasks">
+              <li class="result-task result-task--correct">
+                <img src="images/done.svg" alt="Верно" width="15" height="15">
+                Коэффициенты
+              </li>
+              <li class="result-task result-task--correct">
+                <img src="images/done.svg" alt="Верно" width="15" height="15">
+                Прогноз
+              </li>
+              <li class="result-task result-task--wrong">
+                <img src="images/loss.svg" alt="Ошибка" width="15" height="15">
+                Остаток
+              </li>
+              <li class="result-task result-task--correct">
+                <img src="images/done.svg" alt="Верно" width="15" height="15">
+                Интерпретация
+              </li>
+            </ul>
+
+            <div class="result__next">
+              <div class="result__next-date">
+                <p class="result__next-label">Рекомендуемая следующая проверка</p>
+                <time class="result__next-value" datetime="2026-11-10">10 ноября 2026</time>
+              </div>
+              <p class="result__next-text">
+                По расчёту модели оценка освоения может приблизиться к порогу 70% к 10 ноября.
+                Рекомендуем пройти проверку к этой дате.
+              </p>
+            </div>
+          </section>
+
+          <section class="card review">
+            <h2 class="review__title">
+              <img src="images/book.svg" alt="" width="20" height="20">
+              Что стоит разобрать сейчас
+            </h2>
+
+            <p class="review__text">В разработке...</p>
+
+            <div class="review__actions">
+              <a class="button button--secondary" href="#">Разобрать задание</a>
+              <a class="button" href="profile.html">
+                Посмотреть график и историю
+                <img src="images/next.svg" alt="" width="16" height="16">
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="card agent">
+          <p class="agent__placeholder">Скоро появимся)))</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
